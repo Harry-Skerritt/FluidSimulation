@@ -3,7 +3,8 @@
 #define GAME_H
 
 #include <SFML/Graphics.hpp>
-#include "Vector2.h"
+#include "Sim/FluidSim.h"
+
 
 class Game
 {
@@ -20,8 +21,10 @@ class Game
   void mouseScroll(sf::Event event);
   void mouseDragged(sf::Event event);
 
- private:
-  sf::RenderWindow& window;
+private:
+ sf::RenderWindow& window;
+
+ FluidSim sim;
 
 };
 

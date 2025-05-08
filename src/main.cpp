@@ -6,12 +6,13 @@
 int main()
 {
   // create window and set up
-  sf::RenderWindow window(sf::VideoMode(1080, 720), "Space Invaders!");
+  sf::RenderWindow window(sf::VideoMode(1080, 720), "SFML Project!");
   
   sf::Image icon = sf::Image();
-  if (!icon.loadFromFile("../Data/icon.png")) {
+  if (!icon.loadFromFile("../Data/Images/icon/icon.png")) {
     std::cerr << "Error loading icon" << std::endl;
   }
+
   window.setIcon(icon.getSize().x, icon.getSize().y, icon.getPixelsPtr());
 
 

@@ -16,16 +16,20 @@ Game::~Game()
 bool Game::init()
 {
 
+  sim.initialize(&window);
+
   return true;
 }
 
 void Game::update(float dt)
 {
-
+  sim.update(dt);
 }
 
 void Game::render()
 {
+
+  sim.draw(window);
 
 }
 
